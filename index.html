@@ -128,7 +128,11 @@
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
-        <img src="assets/img/hero-bg.png" alt="" data-aos="fade-in" class="" />
+          <!-- Image for small screens -->
+          <img src="assets/img/my-profile-img.jpg" alt="small hero" data-aos="fade-in" class="d-block d-xl-none" />
+
+          <!-- Image for medium and larger screens -->
+          <img src="assets/img/hero-bg.png" alt="large hero" data-aos="fade-in" class="d-none d-xl-block" />
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <h2>Shudipta Majumder</h2>
@@ -249,12 +253,13 @@
       </section>
       <!-- /About Section -->
 
+
       <!-- Skills Section -->
       <section id="skills" class="skills section light-background">
-        <div class="container">
+        <div class="container section-title" data-aos="fade-up"">
           <!-- Skills Section -->
-          <div class="section mb-5">
-            <div class="skill-tittle">Skills</div>
+          <div class="section ">
+            <h2>Skills</h2>
 
             <strong>Languages:</strong>
             <div>
@@ -330,53 +335,41 @@
 
           <!-- Online Judge Section -->
           <div class="section">
-            <div class="skill-tittle">Online Judge Profiles</div>
+            <h2 class="skill-tittle">Online Judge Profiles</h2>
             <div class="row g-4 align-items-center">
               <div class="col-auto online-judge-logo">
                 <a
-                  href="https://codeforces.com/profile/YOUR_USERNAME"
+                  href="https://codeforces.com/profile/shudipta"
                   target="_blank"
                   rel="noopener"
                 >
                   <img
-                    src="https://sta.codeforces.com/s/23213/images/codeforces-logo-with-telegram.png"
+                    src="assets\img\online-judge\external-codeforces-programming-competitions-and-contests-programming-community-logo-shadow-tal-revivo.png"
                     alt="Codeforces"
                   />
                 </a>
               </div>
               <div class="col-auto online-judge-logo">
                 <a
-                  href="https://leetcode.com/YOUR_USERNAME/"
+                  href="https://leetcode.com/u/shudipta11238/"
                   target="_blank"
                   rel="noopener"
                 >
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                    src="assets\img\online-judge\LeetCode_logo_black.png"
                     alt="LeetCode"
                   />
                 </a>
               </div>
               <div class="col-auto online-judge-logo">
                 <a
-                  href="https://www.hackerrank.com/YOUR_USERNAME"
+                  href="https://www.hackerrank.com/profile/shudiptamazumdar"
                   target="_blank"
                   rel="noopener"
                 >
                   <img
-                    src="https://hrcdn.net/community-frontend/assets/brand/logo-new-white-green-a5cb16e0ae.svg"
+                    src="assets\img\online-judge\png-transparent-hackerrank-hd-logo-thumbnail.png"
                     alt="HackerRank"
-                  />
-                </a>
-              </div>
-              <div class="col-auto online-judge-logo">
-                <a
-                  href="https://lightoj.com/user/YOUR_USERNAME"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img
-                    src="https://lightoj.com/static/media/logo.c9fda5a4.svg"
-                    alt="LightOJ"
                   />
                 </a>
               </div>
@@ -385,17 +378,16 @@
         </div>
       </section>
       <!-- /Skills Section -->
-
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+     
       <!-- Resume Section -->
       <section id="resume" class="resume section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Resume</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            Dedicated and results-driven professional with strong expertise in web development, specializing in Django, React, and RESTful APIs. Proven track record of delivering scalable solutions and optimizing performance for client and enterprise projects. Quick learner, team player, and passionate about continuous improvement and modern technologies.
           </p>
         </div>
         <!-- End Section Title -->
@@ -406,97 +398,86 @@
               <h3 class="resume-title">Sumary</h3>
 
               <div class="resume-item pb-0">
-                <h4>Brandon Johnson</h4>
+                <h4>Shudipta Majumder</h4>
                 <p>
                   <em
-                    >Innovative and deadline-driven Graphic Designer with 3+
-                    years of experience designing and developing user-centered
-                    digital/print marketing material from initial concept to
-                    final, polished deliverable.</em
+                    >Innovative and deadline-driven Web Developer with 2.6+ years of experience building dynamic and scalable web applications using Django. Skilled in developing REST APIs, integrating databases, and optimizing backend performance. Committed to writing clean, efficient code and delivering solutions that meet business goals on time.</em
                   >
                 </p>
                 <ul>
-                  <li>Portland par 127,Orlando, FL</li>
-                  <li>(123) 456-7891</li>
-                  <li>alice.barkley@example.com</li>
+                  <li>Bashundhara Residential Area, Dhaka</li>
+                  <li>+8801795773160</li>
+                  <li>shudiptamazumdar@gmail.com</li>
                 </ul>
               </div>
               <!-- Edn Resume Item -->
 
               <h3 class="resume-title">Education</h3>
+
               <div class="resume-item">
-                <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                <h5>2015 - 2016</h5>
-                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                <h4>Bachelor of Computer Science &amp; Engineering </h4>
+                <h5>2018 - 2022</h5>
+                <p><em>Daffodil International University, Dhaka, BD</em></p>
                 <p>
-                  Qui deserunt veniam. Et sed aliquam labore tempore sed
-                  quisquam iusto autem sit. Ea vero voluptatum qui ut
-                  dignissimos deleniti nerada porti sand markend
+                  <h4>Achivements</h4>
+                  <li> Completed final year project on A Predictive Model To Detect Online Cyber Bullying By Using Machine Learning.</li>
+
+                  <li> Participated in coding contests, workshops, or seminars.</li>
+                </p>
+              </div>
+
+              <div class="resume-item">
+                <h4>HSC</h4>
+                <h5>2015 - 2017</h5>
+                <p><em>Hajigonj Model College University, Hajigonj, Chandpur</em></p>
+                <p>
+                  Completed Higher Secondary Certificate (HSC) from Hajigonj Model College, Science Department.
+                  Graduated from university with a focus on Science, gaining strong analytical and problem-solving skills.
                 </p>
               </div>
               <!-- Edn Resume Item -->
-
-              <div class="resume-item">
-                <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                <h5>2010 - 2014</h5>
-                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                <p>
-                  Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
-                  reiciendis et quis Eius vel ratione eius unde vitae rerum
-                  voluptates asperiores voluptatem Earum molestiae consequatur
-                  neque etlon sader mart dila
-                </p>
-              </div>
               <!-- Edn Resume Item -->
             </div>
 
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
               <h3 class="resume-title">Professional Experience</h3>
               <div class="resume-item">
-                <h4>Senior graphic design specialist</h4>
-                <h5>2019 - Present</h5>
-                <p><em>Experion, New York, NY </em></p>
+                <h4>Software Engineer</h4>
+                <h5>Sep 23 - Present</h5>
+                <p><em>Walton Digi Tech Industries Ltd PLC, Dhaka, BD </em></p>
                 <ul>
                   <li>
-                    Lead in the design, development, and implementation of the
-                    graphic, layout, and production communication materials
+                    Developed Django REST APIs for a School Management System, improving backend performance and scalability.
                   </li>
                   <li>
-                    Delegate tasks to the 7 members of the design team and
-                    provide counsel on all aspects of the project.
+                    Implemented Redis for caching and message queuing, enhancing email and SMS sending efficiency.
                   </li>
                   <li>
-                    Supervise the assessment of all graphic materials in order
-                    to ensure quality and accuracy of the design
+                    Integrated WebSocket using Django Channels to enable real-time communication in the system.
                   </li>
                   <li>
-                    Oversee the efficient use of production project budgets
-                    ranging from $2,000 - $25,000
+                    Set up Nginx as a reverse proxy to optimize load balancing and improve application performance.
                   </li>
                 </ul>
               </div>
               <!-- Edn Resume Item -->
 
               <div class="resume-item">
-                <h4>Graphic design specialist</h4>
-                <h5>2017 - 2018</h5>
-                <p><em>Stepping Stone Advertising, New York, NY</em></p>
+                <h4>Associate Software Engineer</h4>
+                <h5>Mar 23 - Aug 23</h5>
+                <p><em>Walton Digi Tech Industries Ltd PLC, Dhaka, BD</em></p>
                 <ul>
                   <li>
-                    Developed numerous marketing programs (logos,
-                    brochures,infographics, presentations, and advertisements).
+                    Developed a responsive menu, top bar, and sidebar with an intuitive UI/UX for seamless navigation.
                   </li>
                   <li>
-                    Managed up to 5 projects or tasks at a given time while
-                    under pressure
+                    Implemented dark mode, light mode and system mode functionality for enhanced user experience and accessibility.
                   </li>
                   <li>
-                    Recommended and consulted with clients on the most
-                    appropriate graphic design
+                    Contributed to key school management features, including student records, attendance tracking, payroll and staff management.
                   </li>
                   <li>
-                    Created 4+ design presentations and proposals a month for
-                    clients and account managers
+                    Designed and implemented APIs for corporate price quotations, ensuring accurate and dynamic pricing management.
                   </li>
                 </ul>
               </div>

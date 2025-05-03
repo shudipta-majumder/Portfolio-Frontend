@@ -684,16 +684,14 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skill-tittle {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.skills {
+padding: 0px 0px;
 }
 .badge-custom {
   background-color: #cfe9ff;
-  color: #000;
+  color: #185845;
   margin: 5px;
-  font-size: 14px;
+  font-size: 17px;
 }
 .online-judge-logo img {
   height: 50px;
