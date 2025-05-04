@@ -259,3 +259,10 @@ window.addEventListener('load', function () {
     ageElement.textContent = calculateAge('1997-01-03'); // Your birthday
   }
 });
+
+
+// Set current year in span with id="year"
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
+
