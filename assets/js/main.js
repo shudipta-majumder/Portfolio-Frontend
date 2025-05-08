@@ -266,3 +266,48 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("year").textContent = new Date().getFullYear();
 });
 
+// send email
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.getElementById("contact-form");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Show loading
+      document.querySelector(".loading").style.display = "block";
+      document.querySelector(".error-message").innerText = "";
+      document.querySelector(".sent-message").style.display = "none";
+
+      const data = {
+        name: document.getElementById("name-field").value,
+        email: document.getElementById("email-field").value,
+        subject: document.getElementById("subject-field").value,
+        message: document.getElementById("message-field").value,
+      };
+
+      fetch("https://bencheducation.com/communicate/api/send-email-test", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => {
+          document.querySelector(".loading").style.display = "none";
+          if (response.ok) {
+            document.querySelector(".sent-message").style.display = "block";
+            alert("✅ Message sent successfully!");
+            contactForm.reset();
+          } else {
+            throw new Error("Failed to send message");
+          }
+        })
+        .catch((error) => {
+          document.querySelector(".loading").style.display = "none";
+          document.querySelector(".error-message").innerText = error.message;
+          alert("❌ Error: " + error.message);
+        });
+    });
+  }
+});
