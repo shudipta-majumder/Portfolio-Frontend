@@ -1271,3 +1271,17 @@ padding: 0px 0px;
   color: #dfc9db;
   transform: scale(1.05); /* Slight zoom */
 }
+
+#pagination-controls button {
+  padding: 6px 12px;
+  margin: 2px;
+}
+
+.loading-overlay {
+  top: 200px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* optional overlay effect */
+}

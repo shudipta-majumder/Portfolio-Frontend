@@ -504,15 +504,13 @@
             data-sort="original-order"
           >
             <ul
+              id="category-filters"
               class="portfolio-filters isotope-filters"
               data-aos="fade-up"
               data-aos-delay="100"
             >
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Web</li>
-              <li data-filter=".filter-product">App</li>
-              <li data-filter=".filter-branding">Desktop</li>
-              <li data-filter=".filter-books">Machine Learning</li>
+             
             </ul>
             <!-- End Portfolio Filters -->
 
@@ -521,41 +519,30 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/app-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Bench Education</h4>
-                    <p>School Management System</p>
-                    <a
-                      href="assets/img/portfolio/app-1.jpg"
-                      title="Bench Education"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="project-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
+            <!-- Error and Loading and Messages -->
             </div>
+            <div id="loading" class="loading-overlay" >
+              <div class="text-center loading-overlay">
+                <div class="spinner-border text-primary " role="status"></div>
+              </div>
+            </div>
+            
+            <div id="error-message" class="text-center text-danger my-4" style="display: none;">
+              <p>🚨 Server error. Please try again later.</p>
+            </div>
+            
+            <div id="no-projects" class="text-center my-4" style="display: none;">
+              <p>😕 No projects found in this category.</p>
+            </div>
+            
             <!-- End Portfolio Container -->
           </div>
         </div>
       </section>
       <!-- /Portfolio Section -->
+
+      <!-- Pagination Controls -->
+      <div id="pagination-controls" class="text-center mt-4"></div>
 
       <!-- Testimonials Section -->
       <!-- <section id="testimonials" class="testimonials section light-background"> -->

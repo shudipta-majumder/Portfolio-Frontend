@@ -128,18 +128,16 @@
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
-
+    </div>
+    <!-- End Page Title -->
+  
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-
+  
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
-
               <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
@@ -155,70 +153,60 @@
                   }
                 }
               </script>
-
+  
               <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/app-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="">
-                </div>
-
+                <!-- Slides will be injected here dynamically -->
               </div>
+  
               <div class="swiper-pagination"></div>
             </div>
           </div>
-
+  
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <!-- Info will be injected here dynamically -->
               </ul>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Bench Education</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+            <div class="portfolio-info mt-4" data-aos="fade-up" data-aos-delay="250">
+              <h3>Skills Needed</h3>
+              <div id="skills-needed" class="d-flex flex-wrap">
+                <!-- Populated by JavaScript -->
+              </div>
             </div>
+          
+            <div class="portfolio-info mt-4" data-aos="fade-up" data-aos-delay="300">
+              <h3>Contributors</h3>
+              <div id="contributors">
+                <!-- Populated by JavaScript -->
+              </div>
+            </div>
+       
           </div>
-
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2><!-- Title will be injected here --></h2>
+            <p><!-- Description will be injected here --></p>
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Portfolio Details Section -->
-
+    </section>
+    <!-- /Portfolio Details Section -->
+  
   </main>
-
   <footer id="footer" class="footer position-relative light-background">
-
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      <div class="copyright text-center">
+        <p>
+          © <span id="year"></span>
+          <span>All Rights Reserved</span>
+        </p>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+        Made by
+        <a href="https://www.facebook.com/shudipta11238">Shudipta Majumder</a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
