@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
         message: document.getElementById("message-field").value,
       };
 
-      fetch("https://bencheducation.com/communicate/api/send-email-test", {
+      fetch("http://3.27.247.45:8000/communicate/api/send-email-test", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -319,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
   const filterList = document.getElementById("category-filters");
 
-  fetch("http://127.0.0.1:8000/api/categories/")
+  fetch("http://3.27.247.45:8000/api/categories/")
     .then((response) => response.json())
     .then((categories) => {
       categories.forEach((category) => {
@@ -356,8 +356,8 @@ document.addEventListener("DOMContentLoaded", function () {
     paginationControls.innerHTML = "";
     try {
       let url = categoryId
-        ? `http://127.0.0.1:8000/api/projects/category/${categoryId}/?page=${page}&page_size=${pageSize}`
-        : `http://127.0.0.1:8000/api/projects/?page=${page}&page_size=${pageSize}`;
+        ? `http://3.27.247.45:8000/api/projects/category/${categoryId}/?page=${page}&page_size=${pageSize}`
+        : `http://3.27.247.45:8000/api/projects/?page=${page}&page_size=${pageSize}`;
 
       const response = await fetch(url);
 
@@ -500,7 +500,7 @@ function getProjectIdFromURL() {
 }
 
 function fetchProjectDetails(projectId) {
-  fetch(`http://127.0.0.1:8000/api/projects/${projectId}/`)
+  fetch(`http://3.27.247.45:8000/api/projects/${projectId}/`)
     .then((res) => res.json())
     .then((response) => {
       if (response.code === 200) {
