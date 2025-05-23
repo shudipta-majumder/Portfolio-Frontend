@@ -559,8 +559,10 @@ function renderProjectDetail(project) {
         (user) => `
       <div class="d-flex align-items-center mb-2">
         <img src="${user.profile_pic}" alt="${user.name}" class="rounded-circle me-2" width="40" height="40">
-        <span>${user.name}</span>
-        <small class="text-muted">${user.role}</small>
+        <div>
+          <span>${user.name}</span><br>
+          <small class="text-muted">${user.role}</small>
+        </div>
       </div>
     `
       )
