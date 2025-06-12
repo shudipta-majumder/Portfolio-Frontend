@@ -552,7 +552,8 @@ function renderProjectDetail(project) {
     const skills = project.skills_need.split(" ");
     skillsContainer.innerHTML = skills
       .map(
-        (skill) => `<span class="badge me-1 mb-1" style="background-color: #796EF1; color: white;">${skill}</span>`
+        (skill) =>
+          `<span class="badge me-1 mb-1" style="background-color: #796EF1; color: white;">${skill}</span>`
       )
       .join("");
   }
@@ -567,7 +568,7 @@ function renderProjectDetail(project) {
         <img src="${user.profile_pic}" alt="${user.name}" class="rounded-circle me-2" width="40" height="40">
         <div>
           <span>${user.name}</span><br>
-          <small class="text-muted">${user.role}</small>
+          <small class="text-muted">${user.role} (${user?.experience_years} yr)</small>
         </div>
       </div>
     `
