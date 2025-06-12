@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
         message: document.getElementById("message-field").value,
       };
 
-      fetch("https://shudipta.space/backend/communicate/api/send-email-test", {
+      fetch("https://shudipta.space/backend/api/send-email/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
           document.querySelector(".loading").style.display = "none";
           if (response.ok) {
             document.querySelector(".sent-message").style.display = "block";
-            alert("✅ Message sent successfully!");
+            // alert("✅ Message sent successfully!");
             contactForm.reset();
           } else {
             throw new Error("Failed to send message");
@@ -404,11 +404,17 @@ document.addEventListener("DOMContentLoaded", function () {
             <img src="${image}" class="img-fluid" alt="${project.title}" />
             <div class="portfolio-info">
               <h4>${project.title}</h4>
-              <p>${project.description}</p>
-              <a href="${image}" title="${project.title}" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+              <p>
+                ${project.description.split(" ").slice(0, 5).join(" ")}...
+              </p>
+              <a href="${image}" title="${
+        project.title
+      }" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
                 <i class="bi bi-zoom-in"></i>
               </a>
-              <a href="project-details.html?id=${project.id}" title="More Details" class="details-link">
+              <a href="project-details.html?id=${
+                project.id
+              }" title="More Details" class="details-link">
                <i class="bi bi-link-45deg"></i>
               </a>
             </div>
@@ -530,7 +536,7 @@ function renderProjectDetail(project) {
 
   // Project info
   document.querySelector(".portfolio-info ul").innerHTML = `
-    <li><strong>Category</strong>: ${project.category_name}</li>
+    <li><strong>Category</strong>: ${project.category_names.join(", ")}</li>
     <li><strong>Project date</strong>: ${formatDate(project.publish_date)}</li>
     <li><strong>Project URL</strong>: <a href="${
       project.live_link
@@ -546,7 +552,7 @@ function renderProjectDetail(project) {
     const skills = project.skills_need.split(" ");
     skillsContainer.innerHTML = skills
       .map(
-        (skill) => `<span class="badge bg-primary me-1 mb-1">${skill}</span>`
+        (skill) => `<span class="badge me-1 mb-1" style="background-color: #796EF1; color: white;">${skill}</span>`
       )
       .join("");
   }
@@ -572,8 +578,9 @@ function renderProjectDetail(project) {
   // Project description
   document.querySelector(".portfolio-description h2").textContent =
     project.title;
-  document.querySelector(".portfolio-description p").textContent =
-    project.description;
+  const p = document.querySelector(".portfolio-description p");
+  p.innerHTML = project.description.replace(/\\n/g, "<br>");
+  p.style.textAlign = "justify";
 
   // Initialize Swiper (in case not auto-initialized)
   if (typeof Swiper !== "undefined") {

@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #796EF1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -1267,7 +1267,7 @@ padding: 0px 0px;
 }
 
 .btn-download:hover {
-  background-color: #1a0955; /* Darker blue on hover */
+  background-color: #40346d; /* Darker blue on hover */
   color: #dfc9db;
   transform: scale(1.05); /* Slight zoom */
 }
@@ -1275,6 +1275,7 @@ padding: 0px 0px;
 #pagination-controls button {
   padding: 6px 12px;
   margin: 2px;
+  background-color:#796EF1;   
 }
 
 .loading-overlay {
